@@ -34,7 +34,11 @@
     function displayTriangleType(type) {
       document.getElementById("result").innerHTML = '<b>Result</b> ' + type;
     }
-
+    // After triangle type is calculated
+    gtag('event', 'triangle_calculated', {
+      'triangle_type': triangleType,  // e.g., 'EQUILATERAL'
+      'timestamp': new Date().toISOString()
+    });
     </script>
     </head>
     <body>
