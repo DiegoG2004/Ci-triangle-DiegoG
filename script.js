@@ -37,9 +37,9 @@ function getTriangleType(lengthA, lengthB, lengthC) {
     }
   }
   // After triangle type is calculated
-gtag('event', 'triangle_calculated', {
-  'triangle_type': triangleType,  // e.g., 'EQUILATERAL'
-  'timestamp': new Date().toISOString()
-});
+  gtag('event', 'triangle_calculated', {
+    'triangle_type': triangleType,  // e.g., 'EQUILATERAL'
+    'timestamp': new Date().toISOString()
+  });
   return type;
 }
